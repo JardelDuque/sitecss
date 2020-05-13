@@ -7,12 +7,11 @@
 
 @font-face {
   font-family: franklin-gothic-demi;
-  src: local("Franklin Gothic Demi"), url(/fonts/franklin-gothic-demi.ttf);
+  src: local("Franklin Gothic Demi Cond"), url(/fonts/franklin-gothic-demi-cond.ttf);
 }
 
 body {
-  background-image: url('../img/refinery.jpg');
-  background-size: cover;
+  
   font-family: franklin-gothic-demi;
   font-size: 12px;
   height: 100vh;
@@ -40,6 +39,9 @@ body {
 }
 
 header {
+  background-image: url('../img/refinery.jpg');
+  background-size: cover;
+  background-position: bottom center;
   display: flex;
   height: 100vh;
   justify-content: center;
