@@ -5,10 +5,15 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: franklin-gothic-demi;
+  src: local("Franklin Gothic Demi"), url(/fonts/franklin-gothic-demi.ttf);
+}
+
 body {
   background-image: url('../img/refinery.jpg');
   background-size: cover;
-  font-family: Franklin Gothic Demi;
+  font-family: franklin-gothic-demi;
   font-size: 12px;
   height: 100vh;
 }
