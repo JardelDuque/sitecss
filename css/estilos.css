@@ -2,19 +2,14 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-@font-face {
-  font-family: franklin-gothic-demi;
-  src: local("Franklin Gothic Demi Cond"), url(/fonts/franklin-gothic-demi-cond.ttf);
+  justify-content: space-around;
 }
 
 body {
-  
-  font-family: franklin-gothic-demi;
+  font-family: helvetica, Arial;
   font-size: 12px;
-  height: 100vh;
+  height: 200vh;
+  background: linear-gradient(0deg, cornsilk, steelblue, cornsilk);
 }
 
 /*se a tela tiver pelo menos 400px vai carregar estes estilos*/
@@ -82,27 +77,133 @@ a:hover {
 .site-title {
   color: whitesmoke;
   text-align: center;
+  font-family: 'Raleway', sans-serif;
 }
 
 .site-title {
-  font-size: 3em;
+  font-size: 4em;
 }
-
+/*
 .site-subtitle {
-  font-style: italic;
+  font-family: 'Libre Franklin', sans-serif;
+}
+*/
+.interesses {
+  padding: 2em;
+  text-align: center;
 }
 
-section {
-  justify-content: center;
+.interesses h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.interesses .grid {
+  display: grid;
+  gap: 2em;
+  justify-content: space-around;
+}
+
+/*breakpoint*/
+@media (min-width: 640px) {
+  .interesses .grid {
+   grid-template-columns: 270px 270px;
+  }
+}
+
+@media (min-width: 940px) {
+  .interesses .grid {
+   grid-template-columns: repeat(3, 270px);
+  }
+}
+
+.grid figure {
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 .img-portfolio {
-  height: auto;
-  width: 400px;
+  height: 180px;
+  width: 250px;
+  object-fit: cover;
+  object-position: bottom;
 }
 
-section {
+.contatos {
+  background: url(../img/endpicture.jpg);
+  color: gainsboro;
+  padding-top: 2em;
+}
+
+.contatos .grid {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: 270px;
+  justify-content: center;
+}
+
+@media (min-width: 400px) {
+  .contatos .grid {
+   grid-template-columns: 360px;
+  }
+}
+
+@media (min-width: 600px) {
+  .contatos .grid {
+   grid-template-columns: 400px;
+  }
+}
+
+@media (min-width: 800px) {
+  .contatos .grid {
+   grid-template-columns: 400px 320px;
+  }
+}
+
+.contatos h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.contatos p {
+  color: silver;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 0.9em;
+  padding-bottom: 1em;
+  padding-top: 0.5em;
+}
+
+.contatos ul {
   display: flex;
-  flex-flow: column wrap;
-  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contatos li {
+  list-style: none;
+}
+
+.img-rede-social {
+  height: 3em;
+  width: 3em;
+}
+
+@media (min-width: 600px) {
+  .img-rede-social {
+  height: 2.5em;
+  width: 2.5em;
+  }
+}
+
+.footer {
+  color: darkgray;
+  font-family: helvetica , Arial;
+  font-size: .8em;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer span{
+  font-size:0.7em;
 }
